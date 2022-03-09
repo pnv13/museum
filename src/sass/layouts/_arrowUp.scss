@@ -1,0 +1,30 @@
+.arrowUp {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  color: $color-active-h-Font-gold;
+  text-decoration: none;
+  font-size: 50px;
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(130deg, #2d2722 50%, #c4c4c4 50%);
+  background-size: 300%;
+  border-radius: 50%;
+  transition: 0.5s;
+  z-index: 1;
+  opacity: 0;
+  pointer-events: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrowUp.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.arrowUp:hover {
+  background-position: 100% 0;
+}
